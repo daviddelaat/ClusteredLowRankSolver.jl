@@ -474,7 +474,6 @@ function solvesdp(
         end
         println("We return the current solution and optimality status.")
         error_code[1] = 1 #general errors
-        rethrow(e)
     end #of try/catch
     time_total = time() - time_start #this may include compile time
     if verbose == 1
